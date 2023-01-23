@@ -1,0 +1,144 @@
+*,
+html,
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+    display: flex;
+    min-width: 100%;
+    height: 100vh;
+    background-color: white;
+}
+
+.cover {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 20%;
+    padding: 8px;
+
+}
+
+.cover-item {
+    /* background: linear-gradient(-45deg, #000000, #05595B, #E2D784); */
+    background-color: black;
+    background-size: 350% 350%;
+    animation: gradient 5s ease infinite;
+    border-radius: 10px 0 0 10px;
+    height: 98vh;
+    min-width: 100%;
+}
+.cover-item1 {
+    /* background: linear-gradient(-45deg, #000000, #05595B, #E2D784); */
+    background-color: black;
+    background-size: 350% 350%;
+    animation: gradient 5s ease infinite;
+    border-radius: 0 10px 10px 0;
+    height: 98vh;
+    min-width: 100%;
+}
+
+.container-login {
+    height: 100vh;
+    min-width: 60%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper {
+    width: 400px;
+    height: 400px;
+    /* background-color: #F7F5EB; */
+}
+
+.wrapper p {
+    color: rgba(0, 0, 0, .4);
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.wrapper p span {
+    color: #000000;
+    cursor:pointer;
+    transition: all .3s ease-in-out;
+}
+
+.wrapper p span:hover{
+    color: rgba(0, 0, 0, .4);
+    
+}
+
+.login-form {
+    padding: 20px;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+
+.login-title {
+    font-weight: 600;
+    color: black;
+    font-size: 30px;
+}
+
+.login-status {
+    color: rgba(0, 0, 0, .7);
+    font-weight: 500;
+}
+
+.login-input {
+    height: 30px;
+    width: 350px;
+    outline: 0;
+    border-width: 0 0 1px;
+    border-color: grey;
+    transition: all .2s ease-in-out;
+    /* border: solid black 1px; */
+    /* border-radius: 10px; */
+}
+
+.login-input:focus {
+    width: 400px;
+    border-color: black;
+}
+
+.button-input {
+    margin-top: 5px;
+    height: 60px;
+    padding: 10px 15px;
+    font-size: 16px;
+    width: 350px;
+    border: none;
+    color: #ffffff;
+    font-weight: 500;
+    background-color: #000000;
+    cursor: pointer;
+    transition: all .1s ease-in-out;
+
+}
+
+.button-input:hover {
+    background-color: #242424;
+
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+
+}
